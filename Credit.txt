@@ -1,0 +1,10 @@
+Credits
+
+• @Androidnup – Guidance, denials fixing script, charging spoof fix, CPU info fix
+• @rianixia – Obright brightness fix and porting help
+• @Not_ValentineSTCV – charging spoof assistance
+• @goupstream – General help and support
+• @Vqn222 & @mio_android_kitchen_group – AVB disable help
+• @USR_DC – Fastboot script
+• @G54USERY – Support and assistance
+• @Hemuchoudhary12 - testing and for helping in improvement
