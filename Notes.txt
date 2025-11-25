@@ -1,0 +1,75 @@
+NOTES – OxygenOS Port for Moto G54
+
+• Ofox recovery is included by default.
+  Credit: @ussr_1674
+
+• Android Verified Boot (AVB) is disabled by default.
+
+• Base firmware required:
+  V1TDS35H.83-20-5-6
+
+• You MUST flash the base firmware before flashing this port.
+  You can use:
+    - MotoToolPro
+    - @USR_DC fastboot script
+    - Lenovo Rescue / Realme Flash (if supported)
+
+---------------------------------------------------
+FLASHING METHOD (FASTBOOT ROM)
+---------------------------------------------------
+
+After voting, this release is provided as a fastboot ROM instead of recovery flash.
+
+Steps:
+
+1. Flash the required base firmware:
+   V1TDS35H.83-20-5-6
+   (VERY IMPORTANT, otherwise the port will not boot.)
+
+2. Extract the OxygenOS Port ZIP.
+
+3. Reboot your phone into Bootloader Mode.
+
+4. Connect the phone to PC.
+
+5. Run:
+   flash.bat
+
+   The script will automatically flash:
+     • super
+     • vendor_boot
+     • boot
+     • vbmeta
+     • erase userdata
+
+6. Wait until the script completes and device reboots.
+
+---------------------------------------------------
+IMPORTANT
+---------------------------------------------------
+
+• **FORMAT DATA is required** (userdata will be erased by script).
+
+• Do NOT flash incremental OTAs after installing this ROM.
+
+• If bootloop happens:
+  - Reboot to bootloader
+  - Flash base firmware again
+  - Reflash port
+
+• This build is partially enforcing.  
+  Strict enforcing may cause instability on OxygenOS base.
+
+• AOD is disabled because Moto G54 uses IPS display (AOD not supported).
+
+---------------------------------------------------
+OPTIONAL
+---------------------------------------------------
+
+If you want root:
+• KernelSu Next included by default .
+
+If you want recovery:
+• Ofox is already included.
+
+-------------------------------------------------
