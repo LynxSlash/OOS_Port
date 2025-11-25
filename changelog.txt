@@ -1,0 +1,55 @@
+===============================
+        OxygenOS Port
+      Moto G54 - Changelog
+     Updated: 25/11/2025
+===============================
+
+⚠️ NOTE  
+Base firmware required before flashing:
+→ V1TDS35H.83-20-5-6
+
+===============================
+         System Changes
+===============================
+• SELinux set to Enforcing (partially enforcing overall ROM)
+• Addressed 1000+ SELinux denials
+• Improved system stability and performance
+• Google bloatware removed (Debloated GApps)
+• Enabled system-wide blur effects
+• Enabled ZRAM for better memory handling
+• Added missing vendor HALs for functionality and stability
+• Removed Always-On Display (AOD) – not useful for IPS display
+• Reduced log spam (cleaner logcat)
+• Updated CPU information overlay and fixed incorrect reporting
+• General cleanup and bug fixes
+
+===============================
+         Feature Fixes
+===============================
+• Brightness slider fixed
+• Green screen issue during video playback resolved
+• OTG functionality fully fixed
+• DPI issues corrected
+• Power button delay fixed
+• Fingerprint sensor fixed (detection + enrollment)
+• Camera fully fixed (photo + video, HAL compatibility)
+• Added working GCam by default
+
+===============================
+         Kernel / Vendor
+===============================
+• Patched vendor services and permissions
+• Added & patched HALs required for OxygenOS compatibility
+
+===============================
+         Status
+===============================
+• ROM is **partially enforcing**
+• Fully bootable and stable for daily use
+• Major Moto hardware components fixed
+===============================
+         Known Issues
+===============================
+• Dt2w,St2w,rise2wake,dolby
+===============================
+
